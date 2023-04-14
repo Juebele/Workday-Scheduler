@@ -23,7 +23,7 @@ function loadData () {
   var ids = ["9-text", "10-text", "11-text", "12-text", "13-text", "14-text", "15-text", "16-text", "17-text"];
   for (var i = 0; i < ids.length; i++) {
     var data = localStorage.getItem(ids[i]);
-    var element = document.getElementById([i]);
+    var element = document.getElementById(ids[i]);
     console.log(ids)
     console.log(data);
     element.innerHTML += data;
